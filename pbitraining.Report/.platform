@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "pbitraining"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3e8e8a74-2e7d-4a21-b414-bfc4fd98ed8f"
+  }
+}

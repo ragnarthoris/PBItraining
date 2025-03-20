@@ -1,0 +1,5 @@
+relationship f15bace9-5512-4afc-8f25-1e94b4296d6f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: customers-100.'Subscription Date'
+	toColumn: LocalDateTable_9e92266b-226b-4725-9a2a-50e7a1a7b9f2.Date
+

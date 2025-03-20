@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "pbitraining"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6620859a-99a6-42e9-8de9-e4fe161ef64d"
+  }
+}

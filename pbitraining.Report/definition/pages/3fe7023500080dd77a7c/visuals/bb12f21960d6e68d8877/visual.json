@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "bb12f21960d6e68d8877",
+  "position": {
+    "x": 9.8092904070440419,
+    "y": 0,
+    "z": 0,
+    "height": 597.71276213588362,
+    "width": 1089.4851878756915,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "stackedAreaChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "customers-100"
+                    }
+                  },
+                  "Property": "Subscription Date"
+                }
+              },
+              "queryRef": "customers-100.Subscription Date",
+              "nativeQueryRef": "Subscription Date",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "customers-100"
+                        }
+                      },
+                      "Property": "Index"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(customers-100.Index)",
+              "nativeQueryRef": "Sum of Index"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "customers-100"
+                  }
+                },
+                "Property": "Subscription Date"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
